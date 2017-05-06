@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta charset="utf-8">
+		<title>music</title>
+		<link rel="stylesheet" href="music.css">
+	</head>
+	<body>
+	 	<div class="cover">
+			<img class="cover-img"src="images/0.jpg" alt="" />
+		</div>
+		<div class="header">
+			<img id="id-img-return" src="images/return.png" alt="" />
+			<img id="id-img-share" src="images/share.png" alt="" />
+		</div>
+		<div class="container">
+			<div class="playerCD">
+				<div class="CD">
+					<img class="center-CD" src="images/center_border.png"/>
+					<img class="center-song" src="images/0.jpg" alt="" />
+					<img class="center-bg" src="images/play_bg.png" alt="" />
+				</div>
+			</div>
+			<div class="introduction">
+				<div class="musicName">
+					成都
+				</div>
+				<div class="musicPlayer">
+					赵磊
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<audio id='id-audio-player' data-active='0'>
+				<source src="mp3/1.mp3">
+			</audio>
+			<div class="time">
+				<span id='time-start'>00:00</span>
+				<input type="range" class='range'step='1' value="0"max=100 min=0>
+				<span id='time-over'></span>
+			</div>
+			<div class="control">
+				<img class="footer-loop" src="images/onebyone.png" alt="" />
+				<img class="footer-prev" src="images/prev.png" alt="" />
+				<img class="footer-play" src="images/play.png" alt="" />
+				<img class="footer-next" src="images/next.png" alt="" />
+				<img class="footer-src" id="id-img-src" src="images/src.png" alt="" />
+			</div>
+		</div>
+		<script src="music.js"></script>
+	</body>
+</html>
